@@ -1,0 +1,27 @@
+@import 'src/assets/scss/mixins';
+
+.Title {
+  &_level {
+    &_1,
+    &_2 {
+      font-size: 36px;
+      line-height: 1.3;
+
+      @include md-up {
+        font-size: 48px;
+      }
+    }
+
+    &_3,
+    &_4 {
+      font-size: 15px;
+      line-height: 28px;
+    }
+
+    &_5 {
+      font-size: 16px;
+      line-height: 1.4;
+      font-weight: bold;
+    }
+  }
+}

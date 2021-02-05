@@ -1,0 +1,30 @@
+@import 'src/assets/scss/theme';
+
+.ActionListItem {
+  position: relative;
+  min-height: 40px;
+  padding: 10px 19px;
+  text-align: center;
+  background-color: #ffffff;
+  border-top-color: map_get($theme, black);
+
+  &:not(:first-of-type) {
+    border-top-width: 1px;
+    border-top-style: solid;
+  }
+
+  &_groupStart {
+    border-top-color: map_get($theme, dark);
+  }
+
+  &:active {
+    background-color: map_get($theme, black);
+  }
+}
+
+.ActionListItem__check {
+  position: absolute;
+  right: 5px;
+  top: 50%;
+  transform: translateY(-50%);
+}

@@ -1,0 +1,15 @@
+@import 'src/assets/scss/theme';
+
+.FieldLabel {
+  font-size: 14px;
+  font-weight: bold;
+
+  &_invalid {
+    color: map_get($theme, error);
+  }
+
+  &_required::after {
+    content: '*';
+    color: map_get($theme, error);
+  }
+}

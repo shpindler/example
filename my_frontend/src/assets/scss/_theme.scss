@@ -1,0 +1,32 @@
+// SCSS analog from @/utils/theme.ts (Must be equal!).
+
+$default_public: (
+  primary: #def2e3,
+  secondary: #2f4760,
+  success: #60c277,
+  info: #152051,
+  warning: yellow,
+  error: #891010,
+  idle: #f5f7fa
+);
+
+$default_time_attendance: (
+  primary: #def2e3,
+  secondary: rgba(23, 29, 54, 0.3),
+  success: #60c277,
+  info: rgba(23, 29, 54, 1),
+  warning: yellow,
+  error: red,
+  idle: #f5f7fa,
+  danger: #d25e5e,
+  danger-idle: #db7e7e,
+  dark: rgba(23, 29, 54, 1),
+  gray: #f5f5f5,
+  dark-gray: #a9a9a9,
+  light-gray: #e5e5e5,
+  rainy: rgba(199, 198, 214, 0.31),
+  black: #dddddd,
+  highlighted: #3e8cc1
+);
+
+$theme: $default_time_attendance;

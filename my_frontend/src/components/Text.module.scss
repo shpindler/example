@@ -1,0 +1,19 @@
+@import 'src/assets/scss/theme';
+
+.Text {
+  &_oneLine {
+    // React-truncate sometimes has a bug. This rule prevent word wrap in any case.
+    white-space: nowrap;
+  }
+
+  &_help {
+    font-size: 10px;
+    opacity: 0.5;
+  }
+
+  &_highlighted,
+  &_highlighted:hover {
+    font-weight: bold;
+    color: map_get($theme, highlighted);
+  }
+}

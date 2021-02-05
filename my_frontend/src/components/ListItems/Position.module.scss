@@ -1,0 +1,40 @@
+@import 'src/assets/scss/theme';
+
+.Position {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 50px;
+  border-bottom: 1px solid map_get($theme, black);
+
+  &:last-child {
+    border-bottom: none;
+  }
+}
+
+.Position__text {
+  flex-grow: 1;
+  padding: 0 10px;
+}
+
+.Position__delete {
+  display: flex;
+  justify-content: center;
+  align-self: stretch;
+  align-items: center;
+  width: 50px;
+  transition: background-color 0.4s;
+
+  &:hover {
+    background-color: map_get($theme, dark-gray);
+  }
+
+  &:focus {
+    outline: none;
+  }
+}
+
+.Position__icon {
+  min-width: 18px;
+  min-height: 18px;
+}

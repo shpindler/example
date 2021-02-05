@@ -1,0 +1,52 @@
+@import 'src/assets/scss/theme';
+
+
+.Checkbox__label {
+  position: relative;
+  display: flex;
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: bold;
+  cursor: pointer;
+
+  &::before {
+    content: '';
+    display: inline-block;
+    vertical-align: top;
+    min-width: 20px;
+    height: 20px;
+    border: 1px solid #a9a9a9;
+    margin-right: 5px;
+    transition: background-color 0.2s, border-color 0.2s;
+  }
+
+  &:hover:not(:disabled)::before {
+    border-color: map-get($theme, dark);
+  }
+}
+
+.Checkbox__icon {
+  position: absolute;
+  top: 3px;
+  left: 3px;
+  width: 15px;
+  height: 15px;
+  opacity: 0;
+  transition: opacity 0.2s;
+}
+
+.Checkbox_public .Checkbox__icon {
+  color: #ffffff;
+}
+
+.Checkbox__input {
+  display: none;
+}
+
+.Checkbox_public .Checkbox__input:checked + .Checkbox__label::before {
+  background-color: map_get($theme, success);
+}
+
+.Checkbox__input:checked + .Checkbox__label .Checkbox__icon {
+  opacity: 1;
+}

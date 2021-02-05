@@ -1,0 +1,21 @@
+@import 'src/assets/scss/theme';
+
+.Loading {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.Loading__text {
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+.Loading__icon {
+  margin-right: 5px;
+  font-size: 24px;
+}

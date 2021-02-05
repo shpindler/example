@@ -1,0 +1,6 @@
+{
+  "timezone": 180,
+  "violationdelta": 10,
+  "worktimecutoff": 2,
+  "worktimecutnoplan": true
+}

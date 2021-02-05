@@ -1,0 +1,67 @@
+@import 'src/assets/scss/theme';
+
+.Select {
+  position: relative;
+}
+
+.Select__input {
+  padding-right: 30px;
+  cursor: pointer;
+}
+
+.Select_searchable .Select__input {
+  cursor: auto;
+}
+
+.Select__dropdown {
+  position: absolute;
+  z-index: 10000;
+  max-height: 300px;
+  border: 1px solid map_get($theme, gray);
+  overflow-y: auto;
+  box-shadow: 1px 1px 3px 1px map_get($theme, black);
+  background-color: #ffffff;
+}
+
+.SelectOption {
+  padding: 8px;
+  font-size: 16px;
+  background-color: #ffffff;
+  transition: background-color 0.2s, color 0.2s;
+  cursor: pointer;
+
+  &:not(:last-of-type) {
+    border-bottom: 1px solid map_get($theme, gray);
+  }
+
+  &:hover {
+    background-color: map_get($theme, highlighted);
+    color: #ffffff;
+  }
+
+  &_selected {
+    background-color: map_get($theme, highlighted);
+    color: #ffffff;
+  }
+
+  &_disabled {
+    opacity: 0.75;
+  }
+}
+
+.Select__icon {
+  position: absolute;
+  top: calc(50% - 12px);
+  right: 5px;
+  font-size: 24px;
+  transform: translateY(-50%);
+}
+
+.Select__icon_arrow {
+  transform: rotate(-90deg);
+  cursor: pointer;
+}
+
+.Select_opened .Select__icon_arrow {
+  transform: rotate(90deg);
+}

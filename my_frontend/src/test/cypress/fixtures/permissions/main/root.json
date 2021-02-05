@@ -1,0 +1,9 @@
+{
+  "reports": { "readable": true, "executable": true },
+  "objects": { "readable": true, "executable": true },
+  "offices": { "readable": true, "executable": true },
+  "timetable": { "readable": true, "executable": true },
+  "changes": { "readable": true, "executable": true },
+  "bids": { "readable": true, "executable": true },
+  "pending_requests": { "readable": true, "executable": true }
+}

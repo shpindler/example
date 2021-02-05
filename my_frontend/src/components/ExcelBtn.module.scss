@@ -1,0 +1,16 @@
+@import 'src/assets/scss/theme';
+
+.ExcelBtn {
+  color: inherit;
+  cursor: pointer;
+}
+
+.ExcelBtn:hover:not(:disabled) {
+  text-decoration: underline;
+  color: inherit;
+}
+
+.ExcelBtn__icon {
+  margin-right: 5px;
+  font-size: 24px;
+}

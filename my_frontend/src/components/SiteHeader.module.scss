@@ -1,0 +1,20 @@
+.SiteHeader__content {
+  align-items: center;
+  height: 56px;
+  background-color: #ffffff;
+}
+
+.SiteHeader__clock {
+  text-align: right;
+}
+
+.SiteHeader__link {
+  padding: 15px 10px;
+  text-transform: uppercase;
+}
+
+.SiteHeader__col {
+  &:first-of-type {
+    padding-right: 10px;
+  }
+}

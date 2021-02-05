@@ -1,0 +1,37 @@
+@import 'src/assets/scss/theme';
+
+.SiteNavigationItem {
+  display: block;
+  padding: 15px 10px;
+  font-size: 12px;
+  transition: background-color 0.2s;
+
+  &:hover {
+    background-color: #f0f0f0;
+  }
+
+  &:global(.active),
+  &:global(.active):hover {
+    text-decoration: underline;
+  }
+
+  &_highlighted,
+  &_highlighted:hover {
+    font-weight: bold;
+    color: map_get($theme, highlighted);
+  }
+}
+
+.SiteNavigationItem__counter {
+  display: inline-block;
+  vertical-align: middle;
+  min-width: 18px;
+  padding: 0 3px;
+  margin-left: 3px;
+  line-height: 18px;
+  border-radius: 100px;
+  background-color: #c69f3d;
+  text-align: center;
+  color: #ffffff;
+  font-weight: bold;
+}

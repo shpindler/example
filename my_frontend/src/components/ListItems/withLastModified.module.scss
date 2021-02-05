@@ -1,0 +1,16 @@
+@import 'src/assets/scss/theme';
+
+.Modified {
+  position: relative;
+  background-color: map_get($theme, rainy);
+
+  &::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    width: 2px;
+    background-color: map_get($theme, success);
+  }
+}

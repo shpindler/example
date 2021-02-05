@@ -1,0 +1,49 @@
+@import 'src/assets/scss/theme';
+
+.Pagination {
+  display: flex;
+  align-items: center;
+}
+
+.PaginationItem {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 30px;
+  height: 30px;
+  border: 1px solid transparent;
+  text-align: center;
+  line-height: 30px;
+  cursor: default;
+
+  &:not(&_active):not(&_disabled) {
+    cursor: pointer;
+
+    &:hover {
+      border-color: map_get($theme, black);
+      background-color: map_get($theme, dark-gray);
+    }
+  }
+
+  &_active {
+    border-color: map_get($theme, black);
+    background-color: map_get($theme, gray);
+  }
+
+  &_disabled {
+    pointer-events: none;
+    opacity: 0.5;
+  }
+
+  &_control {
+    font-size: 18px;
+  }
+}
+
+.PaginationItem_control_next .PaginationItem__icon {
+  transform: rotate(180deg);
+}
+
+.PaginationItem_control_last .PaginationItem__icon {
+  transform: rotate(180deg);
+}

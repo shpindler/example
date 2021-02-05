@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="JavaScriptSettings">
+    <option name="languageLevel" value="JSX" />
+  </component>
+  <component name="ProjectRootManager" version="2" project-jdk-name="Remote Python 3.7.9 Docker Compose (testgae2-run at [/Users/shpindler/Desktop/Projects/boss_control/dev/testgae2/docker-compose.yml])" project-jdk-type="Python SDK" />
+  <component name="WebPackConfiguration">
+    <option name="path" value="$PROJECT_DIR$/dev/frontend/webpack.config.js" />
+  </component>
+</project>

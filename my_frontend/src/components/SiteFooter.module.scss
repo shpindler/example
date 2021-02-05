@@ -1,0 +1,18 @@
+.SiteFooter {
+  font-size: 12px;
+  line-height: 52px;
+}
+
+.SiteFooter__container {
+  background-color: #ffffff;
+}
+
+.SiteFooter__link {
+  &:hover {
+    text-decoration: underline;
+  }
+}
+
+.SiteFooter__email {
+  font-weight: bold;
+}

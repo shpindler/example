@@ -1,0 +1,10 @@
+@import 'src/assets/scss/bootstrap';
+@import 'src/assets/scss/animations';
+@import 'src/assets/scss/fonts';
+@import 'src/assets/scss/tags';
+@import 'src/assets/scss/utils';
+@import '~react-datepicker/dist/react-datepicker.css';
+
+#root {
+  padding: 5px 0;
+}

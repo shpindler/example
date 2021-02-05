@@ -1,0 +1,31 @@
+@import 'src/assets/scss/theme';
+
+
+.TextField {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+
+.TextField__input {
+  order: 2;
+  height: 38px;
+  font-size: 16px;
+  text-indent: 10px;
+  border: thin solid map_get($theme, dark-gray);
+  transition: border-color 0.2s;
+
+  &::placeholder {
+    font-size: 14px;
+  }
+
+  &:focus,
+  &:hover {
+    outline: none;
+    border-color: map_get($theme, dark);
+  }
+}
+
+.TextField_invalid .TextField__input {
+  border-color: map_get($theme, error);
+}

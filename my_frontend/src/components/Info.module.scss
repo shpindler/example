@@ -1,0 +1,25 @@
+.Info {
+  display: flex;
+  padding: 10px 15px 12px;
+  border-radius: 5px;
+  font-size: 14px;
+  line-height: 1.5;
+
+  &_type {
+    &_warning {
+      background-color: #f3f4f5;
+    }
+
+    &_error {
+      background-color: rgba(255, 100, 66, 0.1);
+    }
+  }
+}
+
+.Info__header {
+  font-weight: bold;
+}
+
+.Info__icon {
+  font-size: 24px;
+}

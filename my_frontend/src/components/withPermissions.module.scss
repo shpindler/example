@@ -1,0 +1,10 @@
+.withPermissions {
+  &_readonly {
+    cursor: default !important;
+    pointer-events: none !important;
+  }
+
+  &_executeOnly {
+    display: none !important;
+  }
+}

@@ -1,0 +1,79 @@
+@import 'src/assets/scss/theme';
+
+.DeviceEvent {
+  font-size: 14px;
+}
+
+.DeviceEvent__row {
+  display: flex;
+  height: 80px;
+  margin: 0;
+}
+
+.DeviceEvent__col {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 0 15px;
+
+  &_status {
+    text-align: center;
+  }
+
+  &_time {
+    text-align: center;
+  }
+
+  &_icons {
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-end;
+    padding: 0;
+  }
+}
+
+.DeviceEvent__icon {
+  width: 20px;
+  height: 20px;
+
+  &_small {
+    width: 16px;
+    height: 16px;
+  }
+}
+
+.DeviceEvent__imageWrapper {
+  padding: 0;
+}
+
+.DeviceEvent__iconWrapper {
+  display: flex;
+  align-items: center;
+  height: 80px;
+  padding: 0 15px;
+
+  &_interactive {
+    cursor: pointer;
+    transition: background-color 0.4s;
+
+    &:hover {
+      background-color: map_get($theme, black);
+    }
+  }
+
+  &:focus {
+    outline: none;
+  }
+}
+
+.DeviceEvent__additional {
+  position: relative;
+}
+
+.DeviceEvent__popover {
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translate(-100%, -50%);
+  width: 300px;
+}

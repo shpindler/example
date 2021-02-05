@@ -1,0 +1,36 @@
+@import '~bootstrap/dist/css/bootstrap-reboot.min';
+@import 'src/assets/scss/theme';
+
+$spacers: (
+  6: 6rem
+);
+
+$container-max-widths: (
+  xs: 1008px
+);
+
+$grid-gutter-width: 60px;
+
+$spacers: (
+  1: 5px
+);
+
+$popover-body-padding-y: 0;
+$popover-body-padding-x: 0;
+$popover-border-radius: 0;
+$zindex-popover: 100;
+$popover-font-size: 14px;
+$popover-max-width: 300px;
+
+@import '~bootstrap/scss/bootstrap-grid';
+@import '~bootstrap/scss/spinners';
+@import '~bootstrap/scss/mixins';
+@import '~bootstrap/scss/popover';
+
+.popover {
+  font-family: inherit;
+}
+
+@each $color, $value in $theme {
+  @include text-emphasis-variant(".text-#{$color}", $value, true);
+}

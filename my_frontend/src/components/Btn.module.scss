@@ -1,0 +1,106 @@
+@import 'src/assets/scss/theme';
+
+
+.Btn {
+  display: inline-block;
+  vertical-align: top;
+  padding: 12px 15px;
+  border-radius: 2px;
+  border: solid 1px map_get($theme, secondary);
+  background-color: #ffffff;
+  text-align: center;
+  line-height: 1.4;
+  font-weight: bold;
+  color: inherit;
+  transition:
+    background-color 0.2s,
+    box-shadow 0.2s,
+    color 0.2s,
+    opacity 0.2s,
+    border-color 0.2s;
+  cursor: pointer;
+
+  &_fluid {
+    width: 100%;
+  }
+
+  &_variant {
+    &_public {
+      &:hover:not(:disabled) {
+        background-color: #e1f3e5;
+        box-shadow: 0 0 50px rgba(59, 197, 91, 0.2);
+        text-decoration: none;
+        color: inherit;
+      }
+
+      &:active:not(:disabled) {
+        background-color: #ffffff;
+        background-image: linear-gradient(0, rgba(47, 71, 96, 0.2), rgba(47, 71, 96, 0.2));
+        color: inherit;
+      }
+    }
+
+    &_gray {
+      min-width: 150px;
+      height: 30px;
+      padding: 5px 10px;
+      border: 1px solid #a0a0a0;
+      border-radius: 0;
+      background-color: #f0f0f0;
+      font-size: 13px;
+      font-weight: normal;
+
+      &:hover:not(:disabled) {
+        background-color: #e0e0e0;
+      }
+
+      &:active:not(:disabled) {
+        box-shadow: inset 0 0 0 1px #d0d0d0;
+      }
+    }
+
+    &_success {
+      border-color: map_get($theme, success);
+      background-color: map_get($theme, success);
+      color: #ffffff;
+      text-transform: uppercase;
+
+      &:hover:not(:disabled) {
+        background: #72c987;
+        box-shadow: 0 0 50px rgba(59, 197, 91, 0.2);
+        color: #ffffff;
+      }
+    }
+
+    &_transparent {
+      padding: 0;
+      border-color: transparent;
+      background-color: transparent;
+      font-weight: normal;
+    }
+
+    &_bordered {
+      background-color: transparent;
+      text-transform: uppercase;
+
+      &:hover:not(:disabled) {
+        background-color: #f2f2f2;
+      }
+    }
+
+    &_danger {
+      background-color: map_get($theme, danger);
+      text-transform: uppercase;
+      color: #ffffff;
+
+      &:hover:not(:disabled) {
+        background-color: map_get($theme, danger-idle);
+      }
+    }
+  }
+
+  &:disabled {
+    opacity: 0.5;
+    cursor: default;
+  }
+}

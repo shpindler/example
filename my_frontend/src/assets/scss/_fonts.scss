@@ -1,0 +1,32 @@
+//@font-face {
+//  font-family: 'Roboto';
+//  src: url('../fonts/Roboto/Roboto-Light.ttf');
+//  font-display: swap;
+//}
+//
+//@font-face {
+//  font-family: 'Roboto';
+//  src: url('../fonts/Roboto/Roboto-Medium.ttf');
+//  font-weight: bold;
+//  font-display: swap;
+//}
+
+@font-face {
+  font-family: 'San Francisco Display Light';
+  src: url('../fonts/SFUIDisplay/SFUIDisplay-Light.eot');
+  src: url('../fonts/SFUIDisplay/SFUIDisplay-Light.eot?#iefix') format('embedded-opentype'),
+  url('../fonts/SFUIDisplay/SFUIDisplay-Light.woff') format('woff'),
+  url('../fonts/SFUIDisplay/SFUIDisplay-Light.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'San Francisco Display Light';
+  src: url('../fonts/SFUIDisplay/SFUIDisplay-Medium.eot');
+  src: url('../fonts/SFUIDisplay/SFUIDisplay-Medium.eot?#iefix') format('embedded-opentype'),
+  url('../fonts/SFUIDisplay/SFUIDisplay-Medium.woff') format('woff'),
+  url('../fonts/SFUIDisplay/SFUIDisplay-Medium.ttf') format('truetype');
+  font-weight: bold;
+  font-style: normal;
+}

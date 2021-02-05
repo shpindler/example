@@ -1,0 +1,29 @@
+@keyframes recommend {
+  0% {
+    background-position: left top;
+  }
+
+  90% {
+    background-position: -27px top;
+  }
+}
+
+.Recommend {
+  position: relative;
+  top: 14px;
+  left: 5px;
+  display: block;
+  width: 27px;
+  height: 18px;
+  background-image: url('../assets/img/bg__recommend.png');
+  background-position: left top;
+  background-repeat: no-repeat;
+  background-size: cover;
+  font-size: 0;
+  animation: recommend 10s steps(1) infinite normal;
+
+  &:hover {
+    background-position: right top;
+    animation: none;
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "general_parameters": { "readable": true, "executable": true },
+  "periodic_reports_parameters": { "readable": true, "executable": true },
+  "employee_check_settings": { "readable": true, "executable": true },
+  "notifications_parameters": { "readable": true, "executable": true },
+  "additional_users": { "readable": true, "executable": true },
+  "password_recovery_settings": { "readable": true, "executable": true },
+  "audit_list": { "readable": true, "executable": true },
+  "sms_history_list": { "readable": true, "executable": true },
+  "employee_propagation": { "readable": true, "executable": true },
+  "position_dictionary": { "readable": true, "executable": true },
+  "company": { "readable": true, "executable": true },
+  "posts": { "readable": true, "executable": true },
+  "timetable": { "readable": true, "executable": true },
+  "additional_settings": { "readable": true, "executable": true },
+  "employee_documents": { "readable": true, "executable": true },
+  "tariffs": { "readable": true, "executable": true },
+  "rules": { "readable": true, "executable": true },
+  "api_docs": { "readable": true, "executable": true },
+  "plan_attributes": { "readable": true, "executable": true },
+  "manual": { "readable": true, "executable": true }
+}

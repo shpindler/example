@@ -1,0 +1,16 @@
+@import 'src/assets/scss/theme';
+
+.ListItem {
+  list-style: none;
+  line-height: 1.5;
+  letter-spacing: 0.03em;
+
+  &_interactive {
+    cursor: pointer;
+    transition: background-color 0.4s;
+
+    &:hover {
+      background-color: map_get($theme, gray);
+    }
+  }
+}

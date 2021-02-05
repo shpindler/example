@@ -1,0 +1,21 @@
+@import 'src/assets/scss/theme';
+
+.RefreshBtn {
+  border: 1px solid map_get($theme, dark);
+  border-radius: 4px;
+  opacity: 0.5;
+  transition: opacity 0.3s;
+
+  &:hover {
+    opacity: 1;
+  }
+
+  &:active {
+    box-shadow: inset 0 0 1px 0 map_get($theme, dark);
+  }
+}
+
+.RefreshBtn__icon {
+  width: 24px;
+  height: 24px;
+}

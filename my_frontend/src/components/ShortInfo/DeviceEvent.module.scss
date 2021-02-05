@@ -1,0 +1,14 @@
+@import 'src/assets/scss/theme';
+
+.DeviceEventShortInfo {
+}
+
+.DeviceEventShortInfo__datetime {
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.DeviceEventShortInfo__instanceId {
+  margin-left: 5px;
+  color: map_get($theme, highlighted);
+}

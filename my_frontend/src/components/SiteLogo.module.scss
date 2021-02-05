@@ -1,0 +1,10 @@
+@import 'src/assets/scss/mixins';
+
+
+.SiteLogo {
+  max-width: 130px;
+
+  @include sm-up {
+    max-width: 100%;
+  }
+}

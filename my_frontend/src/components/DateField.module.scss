@@ -1,0 +1,33 @@
+@import 'src/assets/scss/theme';
+
+.DateField {
+  position: relative;
+  z-index: 100;
+  display: flex;
+  flex-direction: column;
+}
+
+.DateField__calendarIcon {
+  position: absolute;
+  right: 5px;
+  top: 34px;
+  font-size: 20px;
+  color: map_get($theme, dark-gray);
+  transition: color 0.4s;
+  cursor: pointer;
+
+  &:hover {
+    color: inherit;
+  }
+}
+
+.DateField__input {
+  padding-right: 30px;
+
+  &:hover,
+  &:focus {
+    & ~ .DateField__calendarIcon {
+      color: inherit;
+    }
+  }
+}

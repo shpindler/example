@@ -1,0 +1,9 @@
+@import 'src/assets/scss/theme';
+
+.FieldError {
+  position: absolute;
+  bottom: 2px;
+  transform: translateY(100%);
+  font-size: 10px;
+  color: map_get($theme, error);
+}

@@ -1,0 +1,15 @@
+.PageLayout__col {
+  min-height: 700px;
+  padding-top: 18px;
+  padding-bottom: 18px;
+  background-color: #ffffff;
+
+  &:first-of-type {
+    width: 308px;
+  }
+
+  &:last-of-type {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+}

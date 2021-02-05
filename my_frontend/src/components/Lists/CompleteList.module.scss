@@ -1,0 +1,30 @@
+.CompleteList {
+  position: relative;
+  width: 100%;
+}
+
+.CompleteList__header {
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.CompleteList__body {
+  position: relative;
+  min-height: 50px;
+  border-top: 1px solid #111111;
+  border-bottom: 1px solid #111111;
+}
+
+.CompleteList__footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.CompleteList__placeholder {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 14px;
+  line-height: 50px;
+}

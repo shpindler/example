@@ -1,0 +1,19 @@
+.KeyValueDict {
+  font-size: 14px;
+}
+
+.KeyValueDict__key {
+  display: inline-block;
+  vertical-align: top;
+  margin-right: 5px;
+  font-weight: bold;
+
+  &::after {
+    content: ': ';
+  }
+}
+
+.KeyValueDict__value {
+  display: inline-block;
+  vertical-align: top;
+}
